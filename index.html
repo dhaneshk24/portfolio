@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DK's Portfolio</title>
+        <link rel="icon" href="./im/dk.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav class="nav">
+            <img class="ni" src="./im/dk.png">
+            <h1 class="nh">Portfolio</h1>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+        </nav>
+        
+        <div id="mySidebar" class="sidebar">
+            <button class="closebtn" onclick="closeNav()">Close x</button>
+            <button class="a" href="#">About</button>
+            <button class="a" href="#">Services</button>
+            <button class="a" href="#">Clients</button>
+            <button class="a" href="#">Contact</button>
+        </div>
+
+        <script>
+            function openNav() 
+            {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+    
+            function closeNav() 
+            {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+    </body>
+</html>
